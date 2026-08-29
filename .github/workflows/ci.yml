@@ -54,7 +54,7 @@ jobs:
             .
 
       - name: Scan Docker image
-        aquasecurity/trivy-action@v0.36.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: 8byte-backend:${{ github.sha }}
           format: table
